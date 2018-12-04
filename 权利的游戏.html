@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <title>Game Of Thrones</title>
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_386016_boc84vrrj2n2vs4i.css">
+</head>
+<style>
+  html,body {
+    height: 100%;
+    }
+  bady{
+    font-size: 1.4px/1.4 Aria;
+    background: red;
+  }
+
+   header {
+     position: relative;
+     min-height: 600px;
+     height: 100%;
+     background: #000 url(https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1535894431&di=16dcb7207ebe956095719deac359bc60&src=http://img.zcool.cn/community/0131c8597034d3a8012193a30aebf1.jpg@1280w_1l_2o_100sh.jpg) center
+     center no-repeat;
+     background-size: cover;
+     color: white;
+     }
+     header .logo {
+      color: #f7ba3e;
+      font-size: 36px;
+      float: left;
+      margin-top: 10px;
+     }
+    header .nav {
+      float: right;
+     }
+    header .nav > li {
+      float: left;
+    }
+    header .nav a{
+      display: inlink-block;
+      color: #fff;
+      font-size: 16px;
+      padding: 5px;
+    }
+    header .nav a:hover{
+      background: #f7ba3e;
+    }
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+  }
+  .clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .layout {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  header .intro {
+    text-align: center;
+    color: #fff;
+  }
+  .button {
+    display: inlink-block;
+    color: #fff;
+    background: #f7ba3e;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    opacity: 0.8;
+  }
+   .button:hover {
+     opacity: 1;
+   }
+   header .intro {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     color: #fff;
+   }
+   header .intro h1{ 
+     font-size: 32px;
+     }
+   header .intro h2{ 
+     font-size: 46px; 
+     margin-top: 20px;
+     }     
+   header .intro h2 {
+     margin-bottom: 30px;
+   }
+   section {
+     text-align: center;
+     margin-top: 30px;
+   }
+   
+   section > p {
+     margin-top: 30px;
+     font-size: 15px;
+   }
+   section > .family-intro > li {
+     float: left;
+     width: 33.33%;
+   }
+   section > ul .iconfont  {
+     font-size: 40px;
+   }
+   section > ul > li > p {
+     font-size:  12px;
+   }
+   section > ul p{
+     margin-top: 10px;
+   }
+   section .family figure {
+     width: calc(33.33% - 20px);
+     height: 200px;
+     margin: 10px;
+     float: left;
+   }
+   section .family img {
+     margin-top: 30px;
+   }
+   section .family a {
+     height: 200px;
+     display: block;
+   }
+   section .family figcaption {
+     margin-top: 10px;
+     font-size: 14px;
+     font-weight: bold;
+   }
+   section .family src {
+     padding: 5px 10px;
+   }
+   section .family p{
+     color: #666;
+  }
+   section .timeline img {
+     
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     border: 3px solid lightblue;
+   }
+   section .timeline > li:nth-child(odd) {
+     margin-top: 20px;
+     padding-right: calc( 50% - 50px);
+     text-align: right;
+   }
+   section .timeline > li::after {
+     content: '';
+     display: block;
+     clear: both;
+   }
+   section .timeline li:nth-child(odd)  dl  {
+     margin-right: 120px;
+   }
+   section .timeline > li:nth-child(even) {
+     padding-left: calc( 50% - 50px);
+     text-align: left;
+   }
+   section .timeline > li:nth-child(odd) dl {
+     margin-right: 120px;
+   }
+   section .timeline > li:nth-child(odd) img {
+     float: right;
+   }
+   section .timeline > li:nth-child(even) img {
+     float: left;
+   }
+   section .timeline dt {
+     font-size: 16px;
+     font-weight: bold;
+   }
+   section .timeline > li{
+     position: relative;
+     margin-top: 40px;
+   }
+   section .timeline dd:nth-of-type(1){
+     color: #666;
+   }
+   section .timeline > li::before {
+     position: absolute;
+     margin-left: 0px;
+     left: 50%;
+     top: 100px;
+     content: '';
+     display: inline-block;
+     height: 40px;
+     width: 2px;
+     background-color: lightgreen;
+   }
+   </style>
+<body>
+<header>
+ <div class="navbar clearfix layout">
+  <a href="#" class="logo">Game Of Thrones</a>
+    <ul class="nav">
+      <li><a href="#">Server</a></li>
+      <li><a href="#">Family</a></li>
+      <li><a href="#">Character</a></li>
+      <li><a href="#">Team</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+ </div>
+   <div class="intro layout"> 
+     <h1>WINTER IS COMING</h1>
+     <h2>ALONE WOLF DEATH,WOLVES LIVE.</h2>
+     <a href="#" class="button">tell me more</a>
+   </div>
+  
+ 
+</header>
+<main>
+  <section>
+    <h2>家族介绍</h2>
+    <p>关于各个家族情况的介绍</p>
+    <ul class="family-intro clearfix">
+      <li>
+        <span class="iconfont icon-family1"></span>
+        <h3>塔格利安家族</h3>
+        <p>坦格安家族是真龙血脉，是古瓦雷利亚自由堡垒大贵族的后裔。</p>
+      </li>
+      <li>
+        <span class="iconfont icon-family3"></span>
+        <h3>兰尼斯特家族</h3>
+        <p>金发白肤，高大俊美，兰尼斯特家族人体内流着在西方山陵峡谷间建立起强大王国的安达尔冒险者的血液。</p>
+      </li>
+      <li>
+        <span class="iconfont icon-family3"></span>
+        <h3>拜拉席恩家族</h3>
+        <p>拜拉席恩家族是王国数大家族中最年轻的一家，崛起于征服战争时期。</p>
+      </li>
+    </ul>
+  </section>
+  <section>
+  <h2>family</h2>
+  <p>简介：《权力的游戏》（Game of Thrones），是美国HBO电视网制作推出的一部中世纪史诗奇幻题材的电视剧。该剧改编自美国......</p>
+  <div class="family clearfix">
+    <figure>
+      <a href=""><img src=http://a4.att.hudong.com/50/09/01300543909587146857097375421_s.jpg alt=""></a>
+      <figcaption>Winterfell:House Starks</figcaption>
+      <p>winter is coming</p>
+    </figure> 
+    <figure>
+      <a href=""><img src=http://a4.att.hudong.com/50/09/01300543909587146857097375421_s.jpg  alt=""></a>
+      <figcaption>Winterfell:House Starks</figcaption>
+      <p>winter is coming</p>
+    </figure>
+    <figure>
+      <a href=""><img src=http://a4.att.hudong.com/50/09/01300543909587146857097375421_s.jpg  alt=""></a>
+      <figcaption>Winterfell:House Starks</figcaption>
+      <p>winter is coming</p>
+    </figure> 
+    <figure>
+      <a href=""><img src=http://a4.att.hudong.com/50/09/01300543909587146857097375421_s.jpg  alt=""></a>
+      <figcaption>Winterfell:House Starks</figcaption>
+      <p>winter is coming</p>
+    </figure> 
+    <figure>
+      <a href=""><img src=http://a4.att.hudong.com/50/09/01300543909587146857097375421_s.jpg  alt=""></a>
+      <figcaption>Winterfell:House Starks</figcaption>
+      <p>winter is coming</p>
+    </figure> 
+    <figure>
+        <a href=""><img src=http://a4.att.hudong.com/50/09/01300543909587146857097375421_s.jpg  alt=""></a>
+        <figcaption>Winterfell:House Starks</figcaption>
+        <p>winter is coming</p>
+      </figure> 
+  </div>
+  </section>
+  <section>
+    <h2>Time line</h2>  
+    <p>故事的发展曲线</p>
+    <ul class="timeline">
+      <li>
+        <img src="https://chenleoxx.github.io/demos/companypage/images/%E9%9B%AA%E8%AF%BA.jpg" alt="">
+        <dl>
+          <dt>Jon Snow</dt>
+          <dd>基特·哈灵顿饰</dd>
+          <dd>琼恩出生于伊耿历283 AC年，身份是临冬城公爵艾德·史塔克的私生子，在篡夺者战争结束后被从南方带回，并同艾德的嫡生子女一同在临冬城长大。他拥有一只患有白化症的冰原狼“白灵”。在小说故事的开始，琼恩北上加入守夜人去镇守绝境长城。
+          </dd>
+        </dl>
+      </li>
+    <li>
+      <img src="https://chenleoxx.github.io/demos/companypage/images/%E9%9B%AA%E8%AF%BA.jpg" alt="">
+      <dl>
+        <dt>Jon Snow</dt>
+        <dd>基特·哈灵顿饰</dd>
+        <dd>琼恩出生于伊耿历283 AC年，身份是临冬城公爵艾德·史塔克的私生子，在篡夺者战争结束后被从南方带回，并同艾德的嫡生子女一同在临冬城长大。他拥有一只患有白化症的冰原狼“白灵”。在小说故事的开始，琼恩北上加入守夜人去镇守绝境长城。
+        </dd>
+      </dl>
+    </li>
+    <li>
+      <img src="https://chenleoxx.github.io/demos/companypage/images/%E9%9B%AA%E8%AF%BA.jpg" alt="">
+      <dl>
+        <dt>Jon Snow</dt>
+        <dd>基特·哈灵顿饰</dd>
+        <dd>琼恩出生于伊耿历283 AC年，身份是临冬城公爵艾德·史塔克的私生子，在篡夺者战争结束后被从南方带回，并同艾德的嫡生子女一同在临冬城长大。他拥有一只患有白化症的冰原狼“白灵”。在小说故事的开始，琼恩北上加入守夜人去镇守绝境长城。
+        </dd>
+      </dl>
+    </li>
+    <li>
+      <img src="https://chenleoxx.github.io/demos/companypage/images/%E9%9B%AA%E8%AF%BA.jpg" alt="">
+      <dl>
+        <dt>Jon Snow</dt>
+        <dd>基特·哈灵顿饰</dd>
+        <dd>琼恩出生于伊耿历283 AC年，身份是临冬城公爵艾德·史塔克的私生子，在篡夺者战争结束后被从南方带回，并同艾德的嫡生子女一同在临冬城长大。他拥有一只患有白化症的冰原狼“白灵”。在小说故事的开始，琼恩北上加入守夜人去镇守绝境长城。
+        </dd>
+      </dl>
+    </li>
+    <li>
+      <img src="https://chenleoxx.github.io/demos/companypage/images/%E9%9B%AA%E8%AF%BA.jpg" alt="">
+      <dl>
+        <dt>Jon Snow</dt>
+        <dd>基特·哈灵顿饰</dd>
+        <dd>琼恩出生于伊耿历283 AC年，身份是临冬城公爵艾德·史塔克的私生子，在篡夺者战争结束后被从南方带回，并同艾德的嫡生子女一同在临冬城长大。他拥有一只患有白化症的冰原狼“白灵”。在小说故事的开始，琼恩北上加入守夜人去镇守绝境长城。
+        </dd>
+      </dl>
+    </li>
+    </ul>
+  </section>
+</main>
+<footer></footer>
+</body>
+
+</html>
