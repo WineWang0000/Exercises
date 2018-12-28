@@ -17,16 +17,17 @@
       top: 10px;
       width: 100%;
     }
-
+    a {
+      text-decoration: none;
+    }
     header .login {
       float: right;
       margin-right: 20px;
       font-size: 20px;
     }
-
-    /*.flip-modal{
+    /* .flip-modal{
       display: none;
-    }*/
+    }  */
     .show{
       display: block!important;
     }
@@ -46,8 +47,8 @@
       position: absolute;
       right: 10px;
       top: 10px;
+      color: #444;
     }
-
     .modal .tabs {
       text-align: center;
     }
@@ -55,11 +56,11 @@
       display: inline-block;
       font-size: 16px;
       margin: 0 10px;
-      color:red;
+      color:black;
     }
     .modal .tabs a.active {
       border-bottom: 2px solid #444;
-      color: yellow;
+      color: black;
     }
 
     .modal .content {
@@ -87,12 +88,10 @@
     .modal .content input[type=submit] {
       padding: 6px 10px;
       border: none;
-      background:blue;
+      background: #fff;
       box-shadow: 0px 0px 2px rgba(0,0,0,0.4);
       outline: none;
     }
-
-
     .flip-modal.login .modal-login,
     .flip-modal.register .modal-register {
       transform: translate(-50%,-50%) rotateY(0deg);
@@ -105,10 +104,7 @@
       backface-visibility: hidden;
       transition: all 1s;
     }
-
-
-  </style>
-
+</style>
 </head>
 <body>
   <header>
@@ -177,7 +173,7 @@
           return document.querySelectorAll(selector)
         }
        
-    /* $$('.modal .login').forEach(function(node){
+  /* $$('.modal .login').forEach(function(node){
       node.onclick = function(){
         $('.flip-modal').classList.remove('register')
         $('.flip-modal').classList.add('login')
@@ -192,6 +188,9 @@
     $('header .login').onclick = function(e){
       e.stopPropagation( ) 
       $('.flip-modal').style.display = 'block'
+    }
+    $('.modal .close').onclick = function(){
+      $('.flip-modal').style.display = "none"
     }
     $('.flip-modal').addEventListener('click', function(e){
      e.stopPropagation()
@@ -231,14 +230,25 @@
         $('.modal-register .errormsg').innerText = '用户名需输入3-8个字符，包括字母数字下划线'
         return false
       }
-      if(/^hunger$|^ruoyu$/.test($('.modal-registre input[name=username]').value)){
+      if(/^hunger$|^ruoyu$/.test($('.modal-register input[name=username]').value)){
         $('.modal-register .errormsg').innerText = '用户已存在'
         return false
       }
       if(!/^\w{6,10}$/.test($('.modal-register input[name=password').value)){
         $('.modal-register .errormsg').innerText = '用户名需要输入3-8个字符，包括字母，数字，下划线。'
       }
+      if(!/^\w{6,10}$/.test($('.modal-register input[name=password]').value)){
+        $('.modal-register .errormsg').innerText = '密码需输入6-10个字符，包括字母数字下划线'
+        return false
+      }
+      if($('.modal-register input[name=password]').value !==$('.modal-register input[name=password2]').value){
+        $('.modal-register .errormsg').innerText = '俩次密码输入不一样'
+      return false
+    }
+    this.sumbit()
     })
+    
+    
     </script>
       </body>
       </html>
