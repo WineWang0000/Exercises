@@ -8,364 +8,345 @@
     <link rel="stylesheet" href="Exercises/猫咪的故事.html">
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_962989_2omk3aak0nk.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        a {
-            text-decoration: none;
-        }
-        ul {
-            list-style: none;
-        }
-        .layout {
-            min-width: 1000px;
-            margin: 0 auto;
-        }
-        .clearfix::after {
-           content: '';
-           display: block;
-           clear: both;
-        }
-        html,body {
-            height: 100%;
-        }
-        header {
-            position: relative;
-            height: 100%;
-            min-height: 600px;
-            background: #000 url(https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=406206192,2239360658&fm=27&gp=0.jpg) center center no-repeat;
-            background-size: cover;
-            }
-        .title {
-            font-size: 32px;
-            font-family: NSimSun;
-            color:  #f7ba3e;
-            margin-top: 15px;
-            display: inline-block;
-            margin-left: 15px;
-            }
-        header .nav {
-            float: right;
-            }
-        header .nav >li {
-            float: left;
-        }
-        header .nav a {
-            color: #fff;
-            padding: 10px;
-            font-size: 16px;
-            display: block;
-        }
-        header .nav a:hover {
-            background: #f7ba3e;
-            border-radius: 4px;
-        }
-        header .intro {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            color: #fff;
-            text-align: center;
-        }
-        .button {
-            color: #fff;
-            background: #f7ba3e;
-            font-size: 18px;
-            padding: 5px 10px;
-            border-radius: 4px;
-            opacity: 0.8;
-        }
-        .button:hover {
-            opacity: 1;
-        }
-        header .intro h2 {
-            font-size: 40px;
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
-        section {
-            text-align: center;
-            margin-top: 30px;
-        }
-        section >h1 {
-            font-size: 42px;
-        }
-        section >p {
-            margin-top: 10px;
-        }
-        section > ul p {
-            margin-top: 10px;
-            text-align: left；
-        }
-        section > .sec >li {
-            width: 30%;
-            float: left;
-            padding: 10px 20px;
-        }
-        section >ul .iconfont {
-            font-size: 60px;
-            color:#f7ba3e;
-        }
-        section .kids figure {
-            width: calc(33.33% - 20px);
-            float: left;
-            padding: 10px 10px;
-            margin-top: 15px;
-        }
-        section .kids a {
-            /* height: 180px; */
-            display: block;
-        }
-        section .kids img {
-            width: 100%;
-            height: 100%;
-        }
-        section >p {
-            margin-top: 10px;
-            color:  #f7ba3e;
-        }
-        section .kids p{
-            color: #f7ba3e;
-        }
-        section .kids figcaption{
-            font-size: 14px;
-            color: #666;
-        }
-        section ul  h4 {
-            font-size: 32px;
-        }
-        section ul dt {
-            font-weight: bold;
-        }
-        section .timeline dd:nth-of-type(1) {
-            font-weight: bold;
-        }
-        section .timeline img,
-        section .timeline .img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            border: 3px solid #f7ba3e;
-            text-align: center;
-            display: inline-block;
-        }
-        section .timeline .img {
-            display:inline-block;
-            font-size: 16px;
-            text-align: center;
-            color: #f7ba3e;
-        }
-        section .timeline > li:last-child::before {
-            height: 0;
-        }
-        section .timeline >li::after {
-            content: '';
-            display: block;
-            clear: both;
-        }
-        section .timeline > li:nth-child(odd) {
-            text-align: right;
-            margin-top: 20px;
-            padding-right: calc(50% - 50px);
-        }
-        section .timeline > li:nth-child(odd) img{
-            float: right;
-        }
-        section .timeline li:nth-child(odd) dl {
-            margin-right: 180px;
-        }
-        section .timeline > li:nth-child(even){
-            padding-left: calc(50% - 110px);
-            text-align: left;
-            margin-top: 20px;
-        }
-        section .timeline > li:nth-child(even) img{
-            float: left;
-        }
-        section .timeline > li:nth-child(even) dl {
-            margin-left: 180px;
-        }
-        section .timeline > li::before {
-            content: '';
-            display:inline-block;
-            position: absolute;
-            height: 24px;
-            width: 4px;
-            background-color: #f7ba3e;
-            left: 50%;
-            margin-left: -30px;
-            top: 155px;
-        }
-        section .timeline > li {
-            margin-top: 50px;
-            position: relative;
-        } /*第二部分*/
-        footer {
-            background: #000 url("https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3119021000,3503653606&fm=27&gp=0.jpg")center center no-repeat;
-            background-size: cover;
-            width: 100%;
-            height: 100%;
-        }
-        footer .contain {
-            width: 700px;
-            height: 500px;
-            border: solid 1px #666;
-            margin: 0 auto;
-            padding: 50px 100px;
-        }
-        footer .contain .box1 {
-            float: left; 
-            margin: 300px;
-            text-align: left;
-            padding:0%;
-        }
-        footer .contain .input {
-            float: right;
-            margin: 300px;
-        }
-
-        
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			a {
+				text-decoration: none;
+			}
+			ul {
+				list-style: none;
+			}
+			.layout {
+				min-width: 1000px;
+				margin: 0 auto;
+			}
+			.clearfix::after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+			html,body {
+				height: 100%;
+			}
+			header {
+				position: relative;
+				height: 100%;
+				min-height: 600px;
+				background: #000 url(https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=406206192,2239360658&fm=27&gp=0.jpg) center center no-repeat;
+				background-size: cover;
+					}
+			.title {
+				font-size: 32px;
+				font-family: NSimSun;
+				color:  #f7ba3e;
+				margin-top: 15px;
+				display: inline-block;
+				margin-left: 15px;
+					}
+			header .nav {
+				float: right;
+					}
+			header .nav >li {
+				float: left;
+			}
+			header .nav a {
+				color: #fff;
+				padding: 10px;
+				font-size: 16px;
+				display: block;
+			}
+			header .nav a:hover {
+				background: #f7ba3e;
+				border-radius: 4px;
+			}
+			header .intro {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				color: #fff;
+				text-align: center;
+			}
+			.button {
+				color: #fff;
+				background: #f7ba3e;
+				font-size: 18px;
+				padding: 5px 10px;
+				border-radius: 4px;
+				opacity: 0.8;
+			}
+			.button:hover {
+				opacity: 1;
+			}
+			header .intro h2 {
+				font-size: 40px;
+				margin-top: 30px;
+				margin-bottom: 30px;
+			}
+			section {
+				text-align: center;
+				margin-top: 30px;
+			}
+			section >h1 {
+				font-size: 42px;
+			}
+			section >p {
+				margin-top: 10px;
+			}
+			section > ul p {
+				margin-top: 10px;
+				text-align: left；
+			}
+			section > .sec >li {
+				width: 30%;
+				float: left;
+				padding: 10px 20px;
+			}
+			section >ul .iconfont {
+				font-size: 60px;
+				color:#f7ba3e;
+			}
+			section .kids figure {
+				width: calc(33.33% - 20px);
+				float: left;
+				padding: 10px 10px;
+				margin-top: 15px;
+			}
+			section .kids a {
+				display: block;
+			}
+			section .kids img {
+				width: 100%;
+				height: 100%;
+			}
+			section >p {
+				margin-top: 10px;
+				color:  #f7ba3e;
+			}
+			section .kids p{
+				color: #f7ba3e;
+			}
+			section .kids figcaption{
+				font-size: 14px;
+				color: #666;
+			}
+			section ul  h4 {
+				font-size: 32px;
+			}
+			section ul dt {
+				font-weight: bold;
+			}
+			section .timeline dd:nth-of-type(1) {
+				font-weight: bold;
+			}
+			section .timeline img,
+			section .timeline .img {
+				border-radius: 50%;
+				width: 150px;
+				height: 150px;
+				border: 3px solid #f7ba3e;
+				text-align: center;
+				display: inline-block;
+			}
+			section .timeline .img {
+				display:inline-block;
+				font-size: 16px;
+				text-align: center;
+				color: #f7ba3e;
+			}
+			section .timeline > li:last-child::before {
+				height: 0;
+			}
+			section .timeline >li::after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+			section .timeline > li:nth-child(odd) {
+				text-align: right;
+				margin-top: 20px;
+				padding-right: calc(50% - 50px);
+			}
+			section .timeline > li:nth-child(odd) img{
+				float: right;
+			}
+			section .timeline li:nth-child(odd) dl {
+				margin-right: 180px;
+			}
+			section .timeline > li:nth-child(even){
+				padding-left: calc(50% - 110px);
+				text-align: left;
+				margin-top: 20px;
+			}
+			section .timeline > li:nth-child(even) img{
+				float: left;
+			}
+			section .timeline > li:nth-child(even) dl {
+				margin-left: 180px;
+			}
+			section .timeline > li::before {
+				content: '';
+				display:inline-block;
+				position: absolute;
+				height: 24px;
+				width: 4px;
+				background-color: #f7ba3e;
+				left: 50%;
+				margin-left: -30px;
+				top: 155px;
+			}
+			section .timeline > li {
+				margin-top: 50px;
+				position: relative;
+			} /*第二部分*/
+			footer {
+				background: #000 url("https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3119021000,3503653606&fm=27&gp=0.jpg")center center no-repeat;
+				background-size: cover;
+				width: 100%;
+				height: 100%;
+			}
+			footer .contain {
+				width: 700px;
+				height: 500px;
+				margin: 0 auto;
+				padding: 50px 100px;
+			}
+			footer .contain .box1 {
+				float: left; 
+				margin: 300px;
+				text-align: left;
+				padding:0%;
+			}
     </style>
 </head>
 <body>
-    <header>
-        <div class="navbar layout clearfix">
-            <a href="#" class="title">Game Of Cat</a>
-            <ul class="nav">
-                <li><a href="#">services</a></li>
-                <li><a href="#">family</a></li>
-                <li><a href="#">characteer</a></li>
-                <li><a href="#">team</a></li>
-                <li><a href="#">contact</a></li> 
-            </ul>
-            <div class="intro layout">
-                <h1>CAT IS COMMING</h1>
-                <h2>ALONE WOLF DEATH,WOLVES LIVE.</h2>
-                <a href="#" class="button">LOVE ME</a>
-            </div>
-        </div>
-    </header>
-    <main class="layout">
-        <section>
-          <h1>Servies</h1>
-          <p>understand yourself in order to better understanding others.</p>
-          <ul class="clearfix sec">
-            <li>
-              <span class="iconfont icon-cat1"></span>
-              <h3>cat-bosi</h3>
-              <p>波斯猫是以阿富汗的土种长毛猫和土耳其的安哥拉长毛猫为基础，在英国经过100多年的选种繁殖，于1860年诞生的一个品种。波斯猫是最常见的长毛猫，波斯猫长而华丽的背毛，优雅的举止，故有“猫中王子”、“王妃”之称，是世界上爱猫者最喜欢的纯种猫之一，占有极其重要的地位。</p>
-            </li>
-              <li>
-              <span class="iconfont icon-cat2"></span>
-              <h3>cat-zheer</h3>
-              <p>苏格兰折耳猫是猫的一种在耳朵有基因突变的猫种。由于这猫种最初在苏格兰发现，所以以它的发现地和身体特征而命名。这种猫在软骨部份有一个折，使耳朵向前屈折，并指向头的前方。也正因如此，这种猫患有先天骨科疾病，时常用坐立的姿势来缓解痛苦。它乐意与人为伴，并用它特有的这种安宁的方式来表达。</p>
-            </li>
-            <li>
-            <span class="iconfont icon-cat3"></span>
-            <h3>cat-boou</h3>
-            <p>布偶猫,发源于美国，是一种杂交品种宠物猫。是现存体型最大、体重最重的猫之一。头呈楔形，眼大而圆，被毛丰厚，四肢较长且富有肉感，尾长，身体柔软，毛色有重点色、手套色或双色等等。布偶猫较为温顺好静，对人友善。其美丽优雅又非常类似于狗的性格（Puppy cat）而又被称为"仙女猫"，"小狗猫"。特殊的外貌和温和的性格是布偶猫最大的特点之一。</p>
-            </li>
-         </ul>
-        </section>
-        <section>
-          <h2>品种介绍</h2>
-          <p>太可爱了， emmmm，想啊一口。</p>
-          <div class="kids clearfix">
-            <figure>
-               <a href=""><img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2551979310,2488896374&fm=26&gp=0.jpg" alt=""></a>
-               <figcaption>品种一</figcaption>
-               <p>波斯猫</p>
-           </figure>
-           <figure>
-               <a href=""><img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2551979310,2488896374&fm=26&gp=0.jpg" alt=""></a>
-               <figcaption>品种二</figcaption>
-               <p>布偶猫</p>
-           </figure>
-           <figure>
-                <a href=""><img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2551979310,2488896374&fm=26&gp=0.jpg" alt=""></a>
-               <figcaption>品种三</figcaption>
-               <p>异国短毛猫</p>
-           </figure>
-           <figure>
-               <a href=""><img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2551979310,2488896374&fm=26&gp=0.jpg" alt=""></a>
-               <figcaption>品种四</figcaption>
-               <p>折耳猫</p>
-           </figure>
-           <figure>
-                <a href=""><img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2551979310,2488896374&fm=26&gp=0.jpg" alt=""></a>
-                <figcaption>品种五</figcaption>
-                <p>加菲猫</p>
-           </figure>
-           <figure>
-                <a href=""><img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2551979310,2488896374&fm=26&gp=0.jpg" alt=""></a>
-                <figcaption>品种六</figcaption>
-                <p>挪威森林猫</p>
-           </figure>
-          </div>
-          </section>
-        <section>
-            <ul class="timeline">
-                <h4>introduction</h4>
-                <li>
-                    <img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3251177888,2176087507&fm=27&gp=0.jpg" alt="">
-                    <dl>
-                        <dt>Dec 2018
-                            <dd>introduction cat</dd>
-                            <dd>ats are cute animals,they are very special as well. It has pointy ears, round eyes,little claws,and short but soft fur.Cats like eating fish and mice.They like to keep themselves clean, they do that by licking their fur.Also they are nocturnal animals, they sleep in the daytime and do most of their movements at night. We should love cat, because cats are our friends,too.</dd>
-                        </dt>
-                    </dl>
-                </li>
-                <li>
-                    <img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3251177888,2176087507&fm=27&gp=0.jpg" alt="">
-                    <dl>
-                        <dt>Dec 2018
-                            <dd>introduction cat</dd>
-                            <dd>ats are cute animals,they are very special as well. It has pointy ears, round eyes,little claws,and short but soft fur.Cats like eating fish and mice.They like to keep themselves clean, they do that by licking their fur.Also they are nocturnal animals, they sleep in the daytime and do most of their movements at night. We should love cat, because cats are our friends,too.</dd>
-                        </dt>
-                    </dl>
-                </li>
-                <li>
-                    <img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3251177888,2176087507&fm=27&gp=0.jpg" alt="">
-                    <dl>
-                        <dt>Dec 2018
-                            <dd>introduction cat</dd>
-                            <dd>ats are cute animals,they are very special as well. It has pointy ears, round eyes,little claws,and short but soft fur.Cats like eating fish and mice.They like to keep themselves clean, they do that by licking their fur.Also they are nocturnal animals, they sleep in the daytime and do most of their movements at night. We should love cat, because cats are our friends,too.</dd>
-                        </dt>
-                    </dl>
-                </li> 
-                <li>
-                        
-                    <img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3251177888,2176087507&fm=27&gp=0.jpg" alt="">
-                       
-                    <dl>
-                       <dt>Dec 2018
-                         <dd>introduction cat</dd>
-                         <dd>ats are cute animals,they are very special as well. It has pointy ears, round eyes,little claws,and short but soft fur.Cats like eating fish and mice.They like to keep themselves clean, they do that by licking their fur.Also they are nocturnal animals, they sleep in the daytime and do most of their movements at night. We should love cat, because cats are our friends,too.</dd>
-                       </dt>
-                    </dl>
-                </li>
-                <li>
-                        <span class="img">I am a cat</span>
-                        <!-- <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=4076658728,2579878524&fm=27&gp=0.jpg" alt=""> -->
-                </li>
-            </ul>
-         </section>
-    </main>
-    <footer>
-        <div class="contain clearfix">
-            <div class="box1">
-                <input placeholder= "YOUR NAME" >
-                <input placeholder= "YOUR EMIAL" >
-                <input placeholder= "YOUR PHONE" >
-            </div>
-            <div class="input">
-                <input placeholder= "YOUR MESSAGE" >
-            </div>
-            
-        </div>
-        <a href="" class="button">SEND MESSAGE</a>
-    </footer>
+	<header>
+		<div class="navbar layout clearfix">
+			<a href="#" class="title">Game Of Cat</a>
+			<ul class="nav">
+				<li><a href="#">services</a></li>
+				<li><a href="#">family</a></li>
+				<li><a href="#">characteer</a></li>
+				<li><a href="#">team</a></li>
+				<li><a href="#">contact</a></li> 
+			</ul>
+			<div class="intro layout">
+				<h1>CAT IS COMMING</h1>
+				<h2>ALONE WOLF DEATH,WOLVES LIVE.</h2>
+				<a href="#" class="button">LOVE ME</a>
+			</div>
+		</div>
+	</header>
+	<main class="layout">
+		<section>
+		  <h1>Servies</h1>
+			<p>understand yourself in order to better understanding others.</p>
+			<ul class="clearfix sec">
+				<li>
+					<span class="iconfont icon-cat1"></span>
+					<h3>cat-bosi</h3>
+					<p>波斯猫是以阿富汗的土种长毛猫和土耳其的安哥拉长毛猫为基础，在英国经过100多年的选种繁殖，于1860年诞生的一个品种。波斯猫是最常见的长毛猫，波斯猫长而华丽的背毛，优雅的举止，故有“猫中王子”、“王妃”之称，是世界上爱猫者最喜欢的纯种猫之一，占有极其重要的地位。</p>
+				</li>
+				<li>
+					<span class="iconfont icon-cat2"></span>
+					<h3>cat-zheer</h3>
+					<p>苏格兰折耳猫是猫的一种在耳朵有基因突变的猫种。由于这猫种最初在苏格兰发现，所以以它的发现地和身体特征而命名。这种猫在软骨部份有一个折，使耳朵向前屈折，并指向头的前方。也正因如此，这种猫患有先天骨科疾病，时常用坐立的姿势来缓解痛苦。它乐意与人为伴，并用它特有的这种安宁的方式来表达。</p>
+				</li>
+				<li>
+					<span class="iconfont icon-cat3"></span>
+					<h3>cat-boou</h3>
+					<p>布偶猫,发源于美国，是一种杂交品种宠物猫。是现存体型最大、体重最重的猫之一。头呈楔形，眼大而圆，被毛丰厚，四肢较长且富有肉感，尾长，身体柔软，毛色有重点色、手套色或双色等等。布偶猫较为温顺好静，对人友善。其美丽优雅又非常类似于狗的性格（Puppy cat）而又被称为"仙女猫"，"小狗猫"。特殊的外貌和温和的性格是布偶猫最大的特点之一。</p>
+				</li>
+			</ul>
+			<section>
+			<h2>品种介绍</h2>
+			<p>太可爱了， emmmm，想啊一口。</p>
+			<div class="kids clearfix">
+				<figure>
+					<a href=""><img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2551979310,2488896374&fm=26&gp=0.jpg" alt=""></a>
+					<figcaption>品种一</figcaption>
+					<p>波斯猫</p>
+				</figure>
+				<figure>
+					<a href=""><img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2551979310,2488896374&fm=26&gp=0.jpg" alt=""></a>
+					<figcaption>品种二</figcaption>
+					<p>布偶猫</p>
+			  </figure>
+			  <figure>
+					<a href=""><img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2551979310,2488896374&fm=26&gp=0.jpg" alt=""></a>
+					<figcaption>品种三</figcaption>
+					<p>异国短毛猫</p>
+			  </figure>
+			  <figure>
+					<a href=""><img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2551979310,2488896374&fm=26&gp=0.jpg" alt=""></a>
+					<figcaption>品种四</figcaption>
+					<p>折耳猫</p>
+			  </figure>
+			  <figure>
+					<a href=""><img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2551979310,2488896374&fm=26&gp=0.jpg" alt=""></a>
+					<figcaption>品种五</figcaption>
+					<p>加菲猫</p>
+					</figure>
+					<figure>
+						<a href=""><img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2551979310,2488896374&fm=26&gp=0.jpg" alt=""></a>
+						<figcaption>品种六</figcaption>
+						<p>挪威森林猫</p>
+					</figure>
+			</div>
+		  </section>
+			<section>
+				<ul class="timeline">
+					<h4>introduction</h4>
+					<li>
+						<img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3251177888,2176087507&fm=27&gp=0.jpg" alt="">
+						<dl>
+							<dt>Dec 2018
+								<dd>introduction cat</dd>
+								<dd>ats are cute animals,they are very special as well. It has pointy ears, round eyes,little claws,and short but soft fur.Cats like eating fish and mice.They like to keep themselves clean, they do that by licking their fur.Also they are nocturnal animals, they sleep in the daytime and do most of their movements at night. We should love cat, because cats are our friends,too.</dd>
+							</dt>
+						</dl>
+					</li>
+					<li>
+					<img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3251177888,2176087507&fm=27&gp=0.jpg" alt="">
+					<dl>
+						<dt>Dec 2018
+							<dd>introduction cat</dd>
+							<dd>ats are cute animals,they are very special as well. It has pointy ears, round eyes,little claws,and short but soft fur.Cats like eating fish and mice.They like to keep themselves clean, they do that by licking their fur.Also they are nocturnal animals, they sleep in the daytime and do most of their movements at night. We should love cat, because cats are our friends,too.</dd>
+						</dt>
+				  </dl>
+				  </li>
+					<li>
+						<img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3251177888,2176087507&fm=27&gp=0.jpg" alt="">
+						<dl>
+							<dt>Dec 2018
+								<dd>introduction cat</dd>
+								<dd>ats are cute animals,they are very special as well. It has pointy ears, round eyes,little claws,and short but soft fur.Cats like eating fish and mice.They like to keep themselves clean, they do that by licking their fur.Also they are nocturnal animals, they sleep in the daytime and do most of their movements at night. We should love cat, because cats are our friends,too.</dd>
+							</dt>
+						</dl>
+					</li> 
+					<li>
+					<img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3251177888,2176087507&fm=27&gp=0.jpg" alt="">
+					<dl>
+						<dt>Dec 2018
+							<dd>introduction cat</dd>
+							<dd>ats are cute animals,they are very special as well. It has pointy ears, round eyes,little claws,and short but soft fur.Cats like eating fish and mice.They like to keep themselves clean, they do that by licking their fur.Also they are nocturnal animals, they sleep in the daytime and do most of their movements at night. We should love cat, because cats are our friends,too.</dd>
+						</dt>
+					</dl>
+					</li>
+					</ul>
+				</section>
+	</main>
+	<footer>
+	  <div class="contain clearfix">
+			<div class="box1">
+				<input placeholder= "YOUR NAME" >
+				<input placeholder= "YOUR EMIAL" >
+				<input placeholder= "YOUR PHONE" >
+			</div>
+		</div>
+		<a href="" class="button">SEND MESSAGE</a>
+	</footer>
 </body>
 </html>
