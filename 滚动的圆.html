@@ -7,19 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="ball"></div>
-    <script>
-        var OffsetX = 500
-        var moveOffset = 0
-        var step = 0
-        function move() {
-          if(moveOffset < OffsetX){
-              ball.style.left = parseInt(getComputedStyle(ball).left) + step + 'px'
-              moveOffset += step
-              requestAnmimationFrame(move)
-          }
-        }
-        move()
-    </script>
+	<div id="ball"></div>
+	<script>
+		var OffsetX = 500
+		var moveOffset = 0
+		var step = 0
+		function move() {
+			if(moveOffset < OffsetX){
+				ball.style.left = parseInt(getComputedStyle(ball).left) + step + 'px'
+				moveOffset += step
+				requestAnmimationFrame(move)
+			}
+		}
+		move()
+	</script>
 </body>
 </html>
