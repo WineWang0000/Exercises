@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./a.css">
+  <script src="//at.alicdn.com/t/font_1059417_1x3ntjofidn.js"></script>
+	<title>Wine's Resume</title>
+	<style type="text/css">
+    .icon {
+			width: 1em; height: 1em;
+			vertical-align: -0.15em;
+			fill: currentColor;
+			overflow: hidden;
+    }
+  </style>
+  </head>
+  <body>
+		<div class="NavBar"> 
+			<div class="NavBar-inner">
+				<a class="logo" href="#" alt="logo">
+				<span class="rs">Rs</span><span class="card">card</span>
+				</a>
+				<nav>
+					<ul>
+						<li><a href="#">ABOUT</a></li>
+						<li><a href="#">SKILLS</a></li>
+						<li><a href="#">EXPERIENCE</a></li>
+						<li><a href="#">PRICING</a></li>
+						<li><a href="#">BOLG</a></li>
+						<li><a href="#">CALENDAR</a></li>
+						<li><a href="#">CONTACT</a></li>
+						<li><a href="#">PTHER</a></li>
+						<li><a href="#">ALL DEMOS</a></li>
+					</ul>
+				</nav>
+		</div>
+		</div>  
+		<div class="banner">
+			<div class="mask"></div>
+		</div>
+		<main>
+		<div class="usercard">
+			<div class="pt clearfix">
+				<div class="photo">
+					<img src="./img/photo.jpg" width=299; height=347; alt="头像">
+				</div>
+				<div class="text">
+					<span class="welcome">
+						hello
+						<span class="triangle"></span>
+					</span>
+					<h1>WingWang</h1>
+					<p>Front-end engineering developer</p>
+					<hr>
+					<dl>
+						<dt>AGE</dt>
+						<dd>20</dd>
+						<dt>CITY</dt>
+						<dd>BeiJing</dd>
+						<dt>NUMBER</dt>
+						<dd>18801234567</dd>
+						<dt>EMAIL</dt>
+						<dd>123456@qq.com</dd>
+					</dl>
+				</div>
+		</div>
+		<footer class="media">
+			<a href="">
+				<svg class="icon" aria-hidden="true">
+					<use xlink:href="#icon-git"></use>
+				</svg>
+			</a>
+			<a href="">
+				<svg class="icon" aria-hidden="true">
+					<use xlink:href="#icon-juejin"></use>
+				</svg>
+			</a>
+			<a href="">
+				<svg class="icon" aria-hidden="true">
+					<use xlink:href="#icon-boke"></use>
+				</svg>
+			</a>
+			<a href="">
+				<svg class="icon" aria-hidden="true">
+					<use xlink:href="#icon-weibo1"></use>
+				</svg>
+			</a>
+			<a href="">
+				<svg class="icon" aria-hidden="true">
+					<use xlink:href="#icon-tuite"></use>
+				</svg>
+				</a>
+		</footer>
+	</div>
+  </main>
+  <p class="wrapper">	
+	  <a class="button" href="" >DONELOAD RESUME</a>
+  </p>
+  <p class="Intro">
+		Hello.I worked as a Junior Software Engineer in XXX ,and I have about 1 year work experience. My major work was Java Web development based on spring, struts and hibernate framework. I also did some other things like writing test cases, doing detailed designs and so on.I think I'm a good team player in project teams.
+  </p>
+	<section class="skills">
+		<h2>Skills</h2>
+			<ol class="clearfix">
+				<li>
+					<h3>WordPress</h3>
+					<div class="progressBar">
+						<div class="progress"></div>
+					</div>
+				</li>
+				<li>
+					<h3>Javascript</h3>
+					<div class="progressBar">
+						<div class="progress"></div>
+					</div>
+				</li>
+				<li>
+					<h3>PHP</h3>
+					<div class="progressBar">
+						<div class="progress"></div>
+					</div>
+				</li>
+				<li>
+					<h3>HTML&amp;CSS</h3>
+					<div class="progressBar">
+						<div class="progress"></div>
+					</div>
+				</li>
+				<li>
+					<h3>PhotoCollect</h3>
+					<div class="progressBar">
+						<div class="progress"></div>
+					</div>
+				</li>
+			</ol>
+	</section>
+	<section class="portfolio">
+		<h2>Portfolio</h2>
+		<nav>
+			<ol class="clearfix">
+				<li id="portfolio1">ALL</li>
+				<li id="portfolio2">PHOTOGRAPHY</li>
+				<li id="portfolio3">UX DESIGN</li>
+			</ol>
+			<div id="portfolioBar" class="portfoliobar state1">
+			<div class="bar"></div>
+		</div>
+		</nav>
+	  <script>
+			portfolio1.onclick = function(){
+				portfolioBar.className = 'portfoliobar state1'
+			}
+			portfolio2.onclick = function(){
+				portfolioBar.className = 'portfoliobar state2'
+			}
+			portfolio3.onclick = function(){
+				portfolioBar.className = 'portfoliobar state3'
+			}
+		</script>
+		<div class="works" style="height: 597px;">
+			<div class="big" style="top: 0; left: 0;">
+				<img src="./img/bg1.jpg" alt="作品1">
+			</div>
+			<div class="small" style="top: 0; left: 645px;">
+				<img src="./img/bg2.jpg" alt="作品2">
+			</div>
+			<div class="small" style="top: 312px; left: 645px;">
+				<img src="./img/bg3.jpg" alt="作品3">
+			</div>
+		</div>
+	</section>
+</body>
+</html>
