@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Flex-中间自适应</title>
+	<style>
+	  header,footer{
+			background: #999;
+			height: 50px;
+		}
+		.contain {
+			display: flex;
+		}
+		.contain > aside{
+			width: 120px;
+			background: white;
+		
+		}
+		.contain > main{
+			height: 400px;
+			width: 300px;
+			background: red;
+			flex: 1;
+		}
+		.contain > nav{
+			width: 100px;
+			background-color: yellow;
+		}
+</style>
+</head>
+<body>
+	<header>头</header>
+	<div class="contain">
+		<aside>固定</aside>
+		<main>自适应</main>
+		<nav>固定</nav>
+	</div>
+ <footer>尾</footer>
+</body>
+</html>
