@@ -1,71 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="./a.css">
-  <script src="//at.alicdn.com/t/font_1081483_heig59pogmi.js"></script>
-	<title>Baidu</title>
-	<style type="text/css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="./a.css">
+<script src="//at.alicdn.com/t/font_1081483_heig59pogmi.js"></script>
+<title>Baidu</title>
+<style type="text/css">
     .icon {
-			width: 1em; height: 1em;
-			vertical-align: -0.15em;
-			fill: currentColor;
-			overflow: hidden;
-    }
-	</style>
+	width: 1em; height: 1em;
+	vertical-align: -0.15em;
+	fill: currentColor;
+	overflow: hidden;
+   }
+</style>
 </head>
 <body>
-	<header>
-		<div class="nav clearfix">
-			<div class="navbar">
-				<a href="https://news.baidu.com/" name="new" style="font-weight:bold;">新闻</a>
-				<a href="https://www.123hao.com/" name="hao" style="font-weight:bold;">hao123</a>
-				<a href="https://map.baidu.com/" name="map" style="font-weight:bold;">地图</a>
-				<a href="https://v.baidu.com/" name="video" style="font-weight:bold;">视频</a>
-				<a href="https://tieba.baidu.com/" name="tieba" style="font-weight:bold;">贴吧</a>
-				<a href="https://xueshu.baidu.com/" name="xuehsu" style="font-weight:bold;">学术</a>
-				<a href="https://passport.baidu.com/v2/?login&amp;tpl=mn&amp;u=http%3A%2F%2Fwww.baidu.com%2F&amp;sms=5" name="login">登录</a>
-				<a href="http://www.baidu.com/gaoji/preferences.html" name="set">设置</a>
-				<a href="#" name="more">更多产品</a>
-			</div>
-		</div>
-		</header>
-		<main>
-			<div class="picture clearfix">
-				<img src="https://www.baidu.com/img/bd_logo1.png" alt="">
-			</div>
-			<div class="container">
-				<span class="inputcontainer">
-					<input id="data" type="text">
-					<span class="floatDiv">
-						<svg class="icon" aria-hidden="true">
-							<use xlink:href="#icon-mic"></use>
-						</svg>
-						<span class="line"></span>
-						<svg class="icon" aria-hidden="true">
-							<use xlink:href="#icon-zhaoxiangji"></use>
-						</svg>
-					</span>
-				</span>
-				<button>百度一下</button>
-				<ul id="contents" class="content">
-					<li>虎牙</li>
-					<li>花瓣</li>
-					<li>海贼王</li>
-					<li>虎牙直播</li>
-				</ul>
-				</div>
-			</main>
-			<script>
-	  		data.oninput = function(e){
-    			if(data.value){
-						contents.classList.add('active') 
-					}else{
-    				contents.classList.remove('active')
-  				}
-				}
-			</script>
+    <header>
+	<div class="nav clearfix">
+	    <div class="navbar">
+		<a href="https://news.baidu.com/" name="new" style="font-weight:bold;">新闻</a>
+		<a href="https://www.123hao.com/" name="hao" style="font-weight:bold;">hao123</a>
+		<a href="https://map.baidu.com/" name="map" style="font-weight:bold;">地图</a>
+		<a href="https://v.baidu.com/" name="video" style="font-weight:bold;">视频</a>
+		<a href="https://tieba.baidu.com/" name="tieba" style="font-weight:bold;">贴吧</a>
+		<a href="https://xueshu.baidu.com/" name="xuehsu" style="font-weight:bold;">学术</a>
+		<a href="https://passport.baidu.com/v2/?login&amp;tpl=mn&amp;u=http%3A%2F%2Fwww.baidu.com%2F&amp;sms=5" name="login">登录</a>
+		<a href="http://www.baidu.com/gaoji/preferences.html" name="set">设置</a>
+		<a href="#" name="more">更多产品</a>
+	    </div>
+        </div>
+    </header>
+    <main>
+	<div class="picture clearfix">
+	    <img src="https://www.baidu.com/img/bd_logo1.png" alt="">
+	</div>
+	<div class="container">
+	    <span class="inputcontainer">
+		<input id="data" type="text">
+		<span class="floatDiv">
+		    <svg class="icon" aria-hidden="true">
+		        <use xlink:href="#icon-mic"></use>
+		    </svg>
+		    <span class="line"></span>
+		    <svg class="icon" aria-hidden="true">
+			<use xlink:href="#icon-zhaoxiangji"></use>
+		    </svg>
+		</span>
+	    </span>
+		<button>百度一下</button>
+		<ul id="contents" class="content">
+		    <li>虎牙</li>
+		    <li>花瓣</li>
+		    <li>海贼王</li>
+		    <li>虎牙直播</li>
+		</ul>
+	</div>
+    </main>
+	<script>
+	    data.oninput = function(e){
+	        if(data.value){
+		    contents.classList.add('active') 
+		}else{
+		    contents.classList.remove('active')
+		}
+	    }
+	</script>
 </body>
 </html>
