@@ -6,136 +6,130 @@
       box-sizing: border-box;
      }
     .nav{
-       bottom: -208px;
-       left: 965px;
+      bottom: -208px;
+      left: 965px;
     }
-     .navbar{
-	float: right;
-	text-align: center;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-     }
-     .navbar a{
-	float: left;
-	color: #333;
-	margin: 21px 11px 0 10px;
-	font-size: 13px;
-     }
-	.navbar a:hover{
-	   color: #00c;
-	}
-	.navbar + button{	
-	   margin: 20px 10px 0 10px;
-	}
-	.navbar :nth-child(9){
-	  background: #38f;
-	  color: white;
-	  margin-right: 13px;
-	  margin-top: 19px;
-	  width: 60px;
-	  height: 23px;
-	  text-decoration: none;
-	  line-height: 23px;
-	}
-	*{
-	  margin: 0; padding: 0;
-	}
-	*{
-	  box-sizing: border-box;
-	}
-	ul,ol{
-          list-style: none;
-	}
-	header > ul{
-	  border: 1px solid red;
-	}
-	header > ul > li{
-	  position: absolute;
-	}
-	.picture{
-	  position: relative;
-	}
-	.picture img{
-	  position: absolute;
-	  display: inline-block;
-	  top: -255px;
-	  margin-left: 180px;
-	  width: 300px;
-	  height: 140px;
-	}
-	.content{
-	  position: absolute;
-	  top: 100%;
-	  left: 0;
-	  display: none;
-	}
-	.content.active{
-	  display: block;
-	}
-	body{
-	  height: 100vh;
-	  display: flex;
-	  justify-content: center;
-	  align-items: center;
-	}
-	.container{
-	  display: flex;
-	  position: relative;
-	  top: -103px;
-	}
-	.inputcontainer{
-	  position: relative;
-	  display: inline-block;
-	}
-	.inputcontainer .line{
-	  width: 0;
-	  height: 13px;
-	  border-left: 1px solid #b8b8b8;
-	  margin: 0 15px ;
-	}
-	.floatDiv{
-	  position: absolute;
-	  right: 0px;
-	  top: 0;
-	  height: 100%;
-	  color: #b8b8b8;
-	  margin-right: 15px;
-	  display: flex;
-	  justify-content: center;
-	  align-items: center;
-	}
-	.inputcontainer input[type=text]{
-	  border: 1px solid #b8b8b8;
-	  width: 540px;
-	  height: 35px;
-	  padding-left: 10px;
-	  font-size: 17px;
-	  line-height: 35px;
-          position: relative;
-	}
-	.inputcontainer input[type=text]:focus{
-	  outline: none;
-	  border-color: #3385ff;
-	}
-	.icon{
-	  width: 20px;
-	  height: 20px;;
-	}
-	.inputcontainer svg.icon:hover{
-	  color: #3385ff;
-	  cursor: pointer;
-	}
-	.inputcontainer + button{
-	  background: #3385ff;
-	  color: white;
-	  padding: 2px 20px;
-	  border: none;
-	  font-size: 15px;
-	  border: 1px solid #2d78f4;
-	}
-	.inputcontainer + button:hover{
-	  box-shadow: 1px 1px 0 0 rgba(0,0,0,0.2);
-	  background: #2d78f4;
-	  cursor: pointer;
-	}
+    .navbar{
+			float: right;
+			text-align: center;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+		}
+		.navbar a{
+			float: left;
+			color: #333;
+			margin: 21px 11px 0 10px;
+			font-size: 13px;
+		}
+	  .navbar a:hover{
+	    color: #00c;
+	  }
+	  .navbar + button{	
+	    margin: 20px 10px 0 10px;
+	  }
+	  .navbar :nth-child(9){
+			background: #38f;
+			color: white;
+			margin-right: 13px;
+			margin-top: 19px;
+			width: 60px;
+			height: 23px;
+			text-decoration: none;
+			line-height: 23px;
+		}
+		ul,ol{
+			list-style: none;
+		}
+		header > ul{
+			border: 1px solid red;
+		}
+		header > ul > li{
+			position: absolute;
+		}
+		.picture{
+			position: relative;
+		}
+		.picture img{
+			position: absolute;
+			display: inline-block;
+			top: -255px;
+			margin-left: 180px;
+			width: 300px;
+			height: 140px;
+		}
+		.content{
+			position: absolute;
+			top: 100%;
+			left: 0;
+			display: none;
+		}
+		.content.active{
+			display: block;
+		}
+		body{
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.container{
+			display: flex;
+			position: relative;
+			top: -103px;
+		}
+		.inputcontainer{
+			position: relative;
+			display: inline-block;
+		}
+		.inputcontainer .line{
+			width: 0;
+			height: 13px;
+			border-left: 1px solid #b8b8b8;
+			margin: 0 15px ;
+		}
+		.floatDiv{
+			position: absolute;
+			right: 0px;
+			top: 0;
+			height: 100%;
+			color: #b8b8b8;
+			margin-right: 15px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.inputcontainer input[type=text]{
+			border: 1px solid #b8b8b8;
+			width: 540px;
+			height: 35px;
+			padding-left: 10px;
+			font-size: 17px;
+			line-height: 35px;
+						position: relative;
+		}
+		.inputcontainer input[type=text]:focus{
+			outline: none;
+			border-color: #3385ff;
+		}
+		.icon{
+			width: 20px;
+			height: 20px;;
+		}
+		.inputcontainer svg.icon:hover{
+			color: #3385ff;
+			cursor: pointer;
+		}
+		.inputcontainer + button{
+			background: #3385ff;
+			color: white;
+			padding: 2px 20px;
+			border: none;
+			font-size: 15px;
+			border: 1px solid #2d78f4;
+		}
+		.inputcontainer + button:hover{
+			box-shadow: 1px 1px 0 0 rgba(0,0,0,0.2);
+			background: #2d78f4;
+			cursor: pointer;
+		}
