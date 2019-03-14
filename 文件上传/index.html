@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>文件上传</title>
-	  <style>
-				.picker{
-						width: 140px;
-						height: 140px;
-						display: flex;
-						justify-content: center;
-						align-items: center;
-						border-radius: 50%;
-						box-shadow:  0 0 3px rgba(0,0,0,0.7);
-						position: relative;
-				}
-				.picker img{
-						max-width: 100%;
-						max-height: 100%;
-						vertical-align: top;
-						border-radius: 50%;
-				}
-				.picker input[type=file]{
-						position: absolute;
-						height: 100%;
-						opacity: 0;
-				}
-				.picker .edit{
-						position: absolute;
-						display: flex;
-						justify-content: center;
-						align-items: center;
-						display: none;
-						cursor: pointer;
-						height: 100%;
-						width: 100%;
-						border-radius: 50%;
-						background: rgba(0,0,0,0.2);
-				}
-				.picker:hover .edit{
-						display: flex;
-				}
-		</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>文件上传</title>
+<style>
+  .picker{
+     width: 140px;
+     height: 140px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 50%;
+     box-shadow:  0 0 3px rgba(0,0,0,0.7);
+     position: relative;
+}
+  .picker img{
+     max-width: 100%;
+     max-height: 100%;
+     vertical-align: top;
+     border-radius: 50%;
+}
+.picker input[type=file]{
+    position: absolute;
+    height: 100%;
+    opacity: 0;
+}
+.picker .edit{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.2);
+}
+.picker:hover .edit{
+    display: flex;
+}
+</style>
 </head>
 <body>
     <div class="picker">
