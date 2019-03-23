@@ -63,7 +63,7 @@
 				<div class="circle"></div>
 			</div>
 		</div>
-		<div class="NavBar"> 
+		<div id=NavBar class="NavBar"> 
 			<div class="NavBar-inner">
 				<a class="logo" href="#" alt="logo">
 				<span class="rs">Rs</span><span class="card">card</span>
@@ -221,7 +221,14 @@
 		setTimeout(function(){
 			All.classList.remove('active')
 		}, 1000)
-	 
+	  window.onscroll = function(a){
+			console.log(a)
+      if(window.scrollY > 0){
+				NavBar.classList.add('sticky')
+			}else{
+				NavBar.classList.remove('sticky')
+			}
+		}
 	</script>
 </body>
 </html>

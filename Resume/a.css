@@ -15,12 +15,22 @@
 			display: block;
 			clear: both;
 		}
+		.NavBar.sticky{
+			background: #FFFFFF;
+			opacity: 0.9;
+			padding: 7px 0;
+			z-index: 1;
+			box-shadow: 0 0 10px rgba(0,0,0,0.25);
+			color: #3d4451;
+		}
 		.NavBar {
 			padding: 8px 0px 20px 0px;
 			position: fixed;
 			top: 0;
 			left: 0;
 			width: 100%;
+			transition: all 1s;
+			color: #9a9da2;
 		}
 		.NavBar-inner {
 			padding: 0 16px;
@@ -28,6 +38,7 @@
 		.NavBar nav > ul {
 			list-style: none;
 			float: right;
+			margin-top: 15px;
 		}
 		.NavBar nav > ul > li {
 			float: left;
@@ -36,11 +47,12 @@
 		}
 		.NavBar nav > ul > li> a {
 			font-size: 12px;
-			color: #B7B7B7;
+			color: inherit;
 			font-weight: bold;
 		}
 		.NavBar nav > ul > li> a:hover {
-			border-bottom: 1px solid orange;
+			border-bottom: 2px solid #e6686a;
+			border-radius: 1px;
 		}
 		.NavBar a {
       float: left;
