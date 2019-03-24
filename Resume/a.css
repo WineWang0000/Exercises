@@ -49,10 +49,30 @@
 			font-size: 12px;
 			color: inherit;
 			font-weight: bold;
+			position: relative;
 		}
-		.NavBar nav > ul > li> a:hover {
-			border-bottom: 2px solid #e6686a;
-			border-radius: 1px;
+		.list{
+			display: none;
+			position: absolute;
+			top: 45px;
+			border: 1px solid grey;
+		}
+		.list.active{
+			display: block;
+		}
+		.NavBar nav > ul > li> a:hover::after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			background: #e06567;
+			height: 3px;
+			animation: barSlide 0.3s;
+		}
+		@keyframes barSlide{
+			0%{width: 0;}
+			100%{width: 100%;}
 		}
 		.NavBar a {
       float: left;

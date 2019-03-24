@@ -71,10 +71,22 @@
 				<nav>
 					<ul>
 						<li><a href="#">ABOUT</a></li>
-						<li><a href="#">SKILLS</a></li>
+						<li><a class="menuTrigger" href="#">SKILLS</a>
+							<ul class="list">
+								<li>skill1</li>
+								<li>skill2</li>
+								<li>skill3</li>
+							</ul>
+						</li>
 						<li><a href="#">EXPERIENCE</a></li>
 						<li><a href="#">PRICING</a></li>
-						<li><a href="#">BOLG</a></li>
+						<li><a class="menuTrigger" href="#">BLOG</a>
+						  <ul class="list">
+								<li>work1</li>
+								<li>work2</li>
+								<li>work3</li>
+							</ul>
+						</li>
 						<li><a href="#">CALENDAR</a></li>
 						<li><a href="#">CONTACT</a></li>
 						<li><a href="#">PTHER</a></li>
@@ -217,18 +229,6 @@
 			</div>
 		</div>
 	</section>
-	<script>
-		setTimeout(function(){
-			All.classList.remove('active')
-		}, 1000)
-	  window.onscroll = function(a){
-			console.log(a)
-      if(window.scrollY > 0){
-				NavBar.classList.add('sticky')
-			}else{
-				NavBar.classList.remove('sticky')
-			}
-		}
-	</script>
+	<script src="a.js"></script>
 </body>
 </html>
