@@ -9,23 +9,28 @@ window.onscroll = function(a){
 		NavBar.classList.remove('sticky')
 	}
 }
-let aTags = document.getElementsByClassName('menuTrigger')
-console.log(aTags)
-for(let i=0;i<aTags.length;i++){
-  aTags[i].onmouseenter = function(e){
-		let a = e.currentTarget
-		let brother = a.nextSibling
-		while(brother.tagName !== 'UL'){
-			brother = brother.nextSibling
-		}
+let liTags = document.getElementsByClassName('menuTrigger')
+for(let i=0;i<liTags.length;i++){
+  liTags[i].onmouseenter = function(e){
+		let li = e.currentTarget
+		let brother = li.getElementsByTagName('ul')[0]
 		brother.classList.add('active')
 	}
-	aTags[i].onmouseleave = function(e){
-		let a = e.currentTarget
-		let brother = a.nextSibling
-		while(brother.tagName !== 'UL'){
-			brother = brother.nextSibling
-		}
+	liTags[i].onmouseleave = function(e){
+		let li = e.currentTarget
+		let brother = li.getElementsByTagName('ul')[0]
 		brother.classList.remove('active')
+		}
+}
+
+let aTags = document.querySelectorAll('nav.menu > ul > li > a')
+for(let i=0;i<aTags.length;i++){
+	aTags[i].onclick = function(e){
+		e.preventDefault()
+		let a = e.currentTarget
+		let href = a.getAttribute('href')
+		let element = document.querySelector(href)
+		let top = element.offsetTop
+		window.scrollTo(0, top - 80)
 	}
 }

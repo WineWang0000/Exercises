@@ -17,7 +17,6 @@
 		}
 		.NavBar.sticky{
 			background: #FFFFFF;
-			opacity: 0.9;
 			padding: 7px 0;
 			z-index: 1;
 			box-shadow: 0 0 10px rgba(0,0,0,0.25);
@@ -44,30 +43,44 @@
 			float: left;
 			margin-left: 17px;
 			margin-right: 17px;
+			line-height: 30px;
+      position: relative;
 		}
 		.NavBar nav > ul > li> a {
 			font-size: 12px;
 			color: inherit;
 			font-weight: bold;
-			position: relative;
 		}
-		.list{
+		.NavBar .list{
 			display: none;
 			position: absolute;
-			top: 45px;
-			border: 1px solid grey;
-		}
-		.list.active{
-			display: block;
-		}
-		.NavBar nav > ul > li> a:hover::after {
-			content: '';
-			display: block;
-			position: absolute;
-			top: 100%;
+			top:100%;
 			left: 0;
-			background: #e06567;
-			height: 3px;
+			background: #ffffff;
+			box-shadow: #9a9da2;
+		}
+		.NavBar .list >li{
+			padding: 0 15px;
+			cursor: pointer;
+		}
+		.NavBar .list.active{
+			display: block;
+		}
+		.NavBar .list.active {
+			text-align: center;
+			animation: menuSlides .5s;
+		}
+		@keyframes menuSlides{
+			0%{transform: translateX(-50%);}
+			100%{transform: translateX(0);}
+		}
+		.NavBar .list > li{
+			white-space: nowrap;
+		}
+		.NavBar nav > ul >li:hover a::after{
+			content:'';
+			display: block;
+			border-bottom: 3px solid #E6686A;
 			animation: barSlide 0.3s;
 		}
 		@keyframes barSlide{
