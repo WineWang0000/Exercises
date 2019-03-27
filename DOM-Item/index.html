@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
+	<title>DOM</title>
 </head>
 <body>
 	<ul class="ct">
@@ -15,38 +15,39 @@
 	<input class="ipt-add-content" placeholder="添加内容"/>
 	<button id="btn-add-start">开头添加</button>
 	<button id="btn-add-end">结尾添加</button>
-  <script>
+	<script>
 		function $(selector){
-		return document.querySelector(selector)
-	}
+			return document.querySelector(selector)
+	  }
 		function $$(selector){
-		return document.querySelectorAll(selector)
-	}
-		$('.ct').onclick = function(e){
-		console.log(e.target.innerText) 
-	} // 分别输出
+			return document.querySelectorAll(selector)
+		}
+
+	// 	$('.ct').onclick = function(e){
+	// 	console.log(e.target.innerText) 
+	// }   分别输出
 
 	// $$('.ct').forEach(function(node){
 	//   node.onclick = function(){
 	//     console.log(this.innerText)
 	//   }
-	// }) //9个字一次输出
+	// })   9个字一次输出
 
     var ul = document.querySelector('.ct')
     var start = document.querySelector('#btn-add-start')
     var end = document.querySelector('#btn-add-end')
     var input = document.querySelector('.ipt-add-content')
     start.addEventListener('click', function(){
-    var li = document.createElement('li')
-    li.innerText = input.value
-    ul.insertBefore(li, ul.firstChild)
-}) //点击开头增加用户输入的内容
+    	var li = document.createElement('li')
+    	li.innerText = input.value
+    	ul.insertBefore(li, ul.firstChild)
+		}) //点击开头增加用户输入的内容
 
     end.addEventListener('click', function(){
-    var li = document.createElement('li')
-    li.innerText = input.value
-    ul.insertBefore(li, ul.lastChild)
-}) //点击结尾增加用户输入的内容
+    	var li = document.createElement('li')
+    	li.innerText = input.value
+    	ul.insertBefore(li, ul.lastChild)
+		}) //点击结尾增加用户输入的内容
 </script>
 </body>
 </html>
