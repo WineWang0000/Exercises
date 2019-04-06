@@ -15,40 +15,40 @@
      border-radius: 50%;
      box-shadow:  0 0 3px rgba(0,0,0,0.7);
      position: relative;
-}
+  }
   .picker img{
      max-width: 100%;
      max-height: 100%;
      vertical-align: top;
      border-radius: 50%;
-}
-.picker input[type=file]{
-    position: absolute;
-    height: 100%;
-    opacity: 0;
-}
-.picker .edit{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-    cursor: pointer;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    background: rgba(0,0,0,0.2);
-}
-.picker:hover .edit{
-    display: flex;
-}
+  } 
+	.picker input[type=file]{
+		 position: absolute;
+		 height: 100%;
+		 opacity: 0;
+	}
+	.picker .edit{
+		 position: absolute;
+		 display: flex;
+		 justify-content: center;
+		 align-items: center;
+	 	 display: none;
+		 cursor: pointer;
+		 height: 100%;
+		 width: 100%;
+		 border-radius: 50%;
+		 background: rgba(0,0,0,0.2);
+	}
+	.picker:hover .edit{
+		 display: flex;
+	}
 </style>
 </head>
 <body>
-    <div class="picker">
-        <img src="https://avatars2.githubusercontent.com/u/39509031?s=460&v=4" alt="">
-        <input type="file" name="">
-        <div class="edit">编辑</div>
-    </div>
+	<div class="picker">
+		<img src="https://avatars2.githubusercontent.com/u/39509031?s=460&v=4" alt="">
+		<input type="file" name="">
+		<div class="edit">编辑</div>
+	</div>
 </body>
 </html>
