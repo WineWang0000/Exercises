@@ -41,12 +41,6 @@
 		ul,ol{
 			list-style: none;
 		}
-		header > ul{
-			border: 1px solid red;
-		}
-		header > ul > li{
-			position: absolute;
-		}
 		.picture{
 			position: relative;
 		}
