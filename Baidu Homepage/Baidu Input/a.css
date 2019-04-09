@@ -15,6 +15,7 @@
 			position: absolute;
 			top: 0px;
 			right: 0px;
+			/* position: relative; */
 		}
 		.navbar a{
 			float: left;
@@ -126,4 +127,29 @@
 			box-shadow: 1px 1px 0 0 rgba(0,0,0,0.2);
 			background: #2d78f4;
 			cursor: pointer;
+		}
+		.product > ul > li{
+		  position: absolute;
+		}
+    .product > ul > li > a{
+			text-decoration: none;
+			position: absolute;
+			left: 405px;
+			/* display: none; */
+		}
+		.navbar .more:hover .product{
+			display: block;
+		}
+		.navbar .more:hover{
+			background: #999999;
+			color: #333333;
+		}
+		.product > ul > li:nth-child(1){
+      top: 40px;
+		}
+		.product > ul > li:nth-child(2){
+      top: 160px;
+		}
+		.product > ul > li:nth-child(3){
+      top: 100px;
 		}

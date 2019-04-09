@@ -6,18 +6,15 @@
   display: flex;
   flex-direction: column;
 }
-
 header{
   height: 100px;
   background-color: lightblue;
   color: white;
 }
-
 main{
   flex-grow: 1;   /* 剩余空间都给中间 */
   overflow: auto; /*超出自适应*/
 }
-
 footer{
   height: 100px;
   background-color: lightpink;

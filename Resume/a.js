@@ -2,7 +2,7 @@ setTimeout(function(){
 	All.classList.remove('active')
 }, 1000)
 window.onscroll = function(a){
-	console.log(a)
+	// console.log(a)
 	if(window.scrollY > 0){
 		NavBar.classList.add('sticky')
 	}else{
