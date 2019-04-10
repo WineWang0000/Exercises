@@ -30,6 +30,7 @@
 			width: 100%;
 			transition: all 1s;
 			color: #9a9da2;
+			opacity: 0.9;
 		}
 		.NavBar-inner {
 			padding: 0 16px;
@@ -78,11 +79,11 @@
 		.NavBar .list > li{
 			white-space: nowrap;
 		}
-		.NavBar nav > ul > li:hover a::after{
-			content:'';
-			display: block;
-			border-bottom: 3px solid #E6686A;
-			animation: barSlide 0.3s;
+		.NavBar .menu li a{
+			border-bottom: 3px solid transparent;
+		}
+		.NavBar-inner > nav  li a:hover{
+			border-bottom: 3px solid #e6686a;
 		}
 		@keyframes barSlide{
 			0%{width: 0;}
@@ -267,6 +268,12 @@
 			height: 100%;
 			background: #E6686A;
 			width: 50%;
+			border-radius: 3px;
+		}
+		section .progress-1{
+			width: 60%;
+			height: 100%;
+			background: #E6686A;
 			border-radius: 3px;
 		}
 		section ol > li {

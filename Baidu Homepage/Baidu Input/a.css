@@ -128,16 +128,17 @@
 			background: #2d78f4;
 			cursor: pointer;
 		}
-		.product > ul > li{
+		.more > ul > li{
 		  position: absolute;
 		}
     .product > ul > li > a{
+			display: block;
 			text-decoration: none;
 			position: absolute;
 			left: 405px;
-			/* display: none; */
+			display: none;
 		}
-		.navbar .more:hover .product{
+		.navbar .more:hover .product ul{
 			display: block;
 		}
 		.navbar .more:hover{
