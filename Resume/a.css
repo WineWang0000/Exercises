@@ -61,24 +61,23 @@
 			background: #ffffff;
 			box-shadow: #9a9da2;
 		}
+		.NavBar .list >li:hover{
+      color: #e6686a;
+		}
 		.NavBar .list >li{
 			padding: 0 15px;
 			cursor: pointer;
-		}
-		.NavBar .list.active{
-			display: block;
-		}
-		.NavBar .list.active {
-			text-align: center;
-			animation: menuSlides .5s;
-		}
-		@keyframes menuSlides{
-			0%{transform: translateX(-50%);}
-			100%{transform: translateX(0);}
-		}
-		.NavBar .list > li{
 			white-space: nowrap;
 		}
+		.NavBar .list.active {
+			display: block;
+			text-align: center;
+			animation: menuSlides .3s;
+		}
+		@keyframes menuSlides{
+			0%{transform: translateX(-100%);}
+			100%{transform: translateX(0%);}
+    }
 		.NavBar .menu li a{
 			border-bottom: 3px solid transparent;
 		}
