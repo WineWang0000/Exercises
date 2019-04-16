@@ -4,57 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
 	<link rel="stylesheet" href="./a.css">
   <script src="//at.alicdn.com/t/font_1059417_1x3ntjofidn.js"></script>
 	<title>Wine's Resume</title>
-	<style type="text/css">
-    .icon {
-			width: 1em; height: 1em;
-			vertical-align: -0.15em;
-			fill: currentColor;
-			overflow: hidden;
-		}
-		.All{
-			display: none;
-			background: #999;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			justify-content: center;
-			align-items: center;
-			z-index: 10;
-			position: fixed;
-		}
-		.All.active{
-			display: flex;
-		}
-		.loading{
-			width: 200px;
-			height: 200px;
-			position: relative;
-		}
-		.circle{
-			height: 20px;
-			width: 20px;
-			background: #444;
-			border-radius: 50%;
-			animation: x 1s linear infinite;
-			position: absolute;
-			top:0;
-			right:0;
-			bottom:0;
-			left:0;
-			margin: auto;
-		}
-		@keyframes x{
-			0%{width: 0;height: 0;opacity: 1;}
-			100%{width: 100px;height: 100px;opacity:0;}
-		}
-		.circle:nth-child(2){
-			animation-delay: 1.5s;
-		}
-  </style>
   </head>
   <body>
 		<div id= All class="All active">
@@ -195,41 +148,40 @@
 					</li>
 				</ol>
 		</section>
-		<section id=portfolio class="portfolio">
+		<section class="portfolio">
 			<h2>Portfolio</h2>
-			<nav>
-				<ol class="clearfix">
-					<li id="portfolio1">ALL</li>
-					<li id="portfolio2">PHOTOGRAPHY</li>
-					<li id="portfolio3">UX DESIGN</li>
-				</ol>
-				<div id="portfolioBar" class="portfoliobar state1">
-				<div class="bar"></div>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<img src="./img/cat1.jpg" class="swiper-slide">
+					<img src="./img/cat2.jpg"  class="swiper-slide">
+					<img src="./img/cat3.jpg"  class="swiper-slide">
+				</div>
+				<div class="swiper-pagination"></div>
 			</div>
-			</nav>
-	  <script>
-			portfolio1.onclick = function(){
-				portfolioBar.className = 'portfoliobar state1'
-			}
-			portfolio2.onclick = function(){
-				portfolioBar.className = 'portfoliobar state2'
-			}
-			portfolio3.onclick = function(){
-				portfolioBar.className = 'portfoliobar state3'
-			}
-		</script>
-		<div class="works" style="height: 597px;">
-			<div class="big" style="top: 0; left: 0;">
-				<img src="./img/bg1.jpg" alt="作品1">
-			</div>
-			<div class="small" style="top: 0; left: 645px;">
-				<img src="./img/bg2.jpg" alt="作品2">
-			</div>
-			<div class="small" style="top: 312px; left: 645px;">
-				<img src="./img/bg3.jpg" alt="作品3">
-			</div>
-		</div>
-	</section>
-	<script src="a.js"></script>
+			<div class="jiantou"> 
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>	
+		</section>
+		<section class="message">
+			<h2>Message</h2>
+			<ol id="messageList">
+				<li></li>
+			</ol>
+			<form id="postMessage" style="width: 720px;margin: 50px auto;">
+				<label for="">Name：</label>
+				<input type="text" name="name">
+				<label for="">Message：</label>
+				<input type="text" name="content">
+				<input type="submit" value="Submit">
+			</form>
+		</section>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+		<script src="a.js"></script>
+		<script src="sticky.js"></script>
+		<script src="auto-slide.js"></script>
+		<script src="swiper.js"></script>
+		<script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.12.0/dist/av-min.js"></script>
+		<script src="message.js"></script>
 </body>
 </html>

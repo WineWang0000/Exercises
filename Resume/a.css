@@ -1,13 +1,60 @@
-	 * {
-		 margin: 0;
-		 padding: 0;
-	 }
-	 body {
+		.icon {
+			width: 1em; height: 1em;
+			vertical-align: -0.15em;
+			fill: currentColor;
+			overflow: hidden;
+		}
+		.All{
+			display: none;
+			background: #999;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			justify-content: center;
+			align-items: center;
+			z-index: 1;
+			position: fixed;
+		}
+		.All.active{
+			display: flex;
+		}
+		.loading{
+			width: 200px;
+			height: 200px;
+			position: relative;
+		}
+		.circle{
+			height: 20px;
+			width: 20px;
+			background: #444;
+			border-radius: 50%;
+			animation: x 1s linear infinite;
+			position: absolute;
+			top:0;
+			right:0;
+			bottom:0;
+			left:0;
+			margin: auto;
+		}
+		@keyframes x{
+			0%{width: 0;height: 0;opacity: 1;}
+			100%{width: 100px;height: 100px;opacity:0;}
+		}
+		.circle:nth-child(2){
+			animation-delay: 1.5s;
+		}
+	  *{
+		  margin: 0;
+		  padding: 0;
+	  }
+	  body{
 			background: #EFEFEF; 
 			color: black;
 			margin: 0;
+			position: relative;
 		}
-		a {
+		a{
 			text-decoration: none;
 		}
 	  .clearfix:after {
@@ -18,7 +65,7 @@
 		.NavBar.sticky{
 			background: #FFFFFF;
 			padding: 7px 0;
-			z-index: 1;
+			z-index: 2;
 			box-shadow: 0 0 10px rgba(0,0,0,0.25);
 			color: #3d4451;
 		}
@@ -31,6 +78,7 @@
 			transition: all 1s;
 			color: #9a9da2;
 			opacity: 0.9;
+			z-index: 20;
 		}
 		.NavBar-inner {
 			padding: 0 16px;
@@ -114,7 +162,6 @@
 		.banner .mask {
 			height: 515px;
 			background-color: rgba(0,0,0,0.8);
-			
 		}
 		main {
 			margin-top: -350px;
@@ -238,6 +285,7 @@
 			margin-right: auto;
 		}
 		section.portfolio > h2,
+		.message h2,
 		section.skills > h2 {
 			text-align: center;
 			color: #3d4451;
@@ -275,11 +323,11 @@
 			background: #E6686A;
 			border-radius: 3px;
 		}
-		section ol > li {
+		.skills> ol > li {
 			float: left;
 			width: 48%;
 		}
-		section ol > li:nth-child(even){
+		.skills ol > li:nth-child(even){
 			float: right;
 		}
 		section.portfolio > nav > ol {
@@ -301,44 +349,48 @@
 		section.portfolio > nav > ol > li:last-child{
 			margin-left: 35px;
 		}
-		section.portfolio {
-			margin-bottom: 100px;
-			cursor: pointer;
-			margin-top: 32px;
+		.swiper-container {
+			width: 666px;
+			height: 444px;
 		}
-		section .portfoliobar {
-			background-color: #ffffff;
-			width: 310px;
-			height: 3px;
-			border-radius: 3px;
-			margin-left: 325px;
-			margin-top: 10px;
+		.swiper-container{
+			top: 50px;
 		}
-		section .portfoliobar > .bar {
-			width: 20%;
-			background-color: #E6686A;
-			height: 3px;
-			border-radius: 3px;
-			margin-left: 30%;
-			transition: all 0.3s;
-		}
-		section .portfoliobar.state1 .bar {
-			margin-left: 0px;
-			width: 75px;
-		}
-		section .portfoliobar.state2 .bar {
-			margin-left: 83px;
-			width: 108px;
-		}
-		section .portfoliobar.state3 .bar {
-			margin-left: 233px;
-			width: 78px;
-		}
-		section.portfolio .works {
-			position: relative;
-			margin-top: 20px;
-		}
-		section.portfolio .works .big,
-		section.portfolio .works .small  {
+		.jiantou{
 			position: absolute;
 		}
+		.jiantou .swiper-button-prev{
+			top: -195px;
+		}
+		.jiantou .swiper-button-next{
+			left: 875px;
+			top: -196px;
+		}
+		.jiantou .swiper-button-prev,
+		.jiantou .swiper-button-next{
+			color: white;
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+		}
+		.jiantou .swiper-button-prev:hover{
+			background-color: #ffffff;
+		}
+		.jiantou .swiper-button-next:hover{
+			background-color: #ffffff;
+		}
+		.message > ol{
+			border-top: 1px solid #DDD;
+			border-bottom: 1px solid #DDD;
+			max-width: 700px;
+			margin: 0 auto;
+		}
+		.message > ol >li:nth-child(1){
+			display: none;
+		}
+		.message  ol li{
+			padding: 10px;
+			border-top: 1px solid #DDD;
+			border-bottom: 1px solid #DDD;
+		}
+	
