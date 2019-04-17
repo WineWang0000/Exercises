@@ -29,14 +29,9 @@
 			})
 		},
 		bindEvents: function(){
-      this.form.addEventListener('submit', function(e){
-				e.preventDefault()
-				this.saveMessage()
-				console.log(1)
-      })
-    },
-		saveMessage: function(){
 			let myForm = this.form
+      this.form.addEventListener('submit', function(e){
+			e.preventDefault()
 			let content = myForm.querySelector('input[name=content]').value
 			let name = myForm.querySelector('input[name=name]').value
 			var Message = AV.Object.extend('Message')
@@ -53,6 +48,10 @@
 				myForm.querySelector('input[name=content]').value = ''
 				myForm.querySelector('input[name=name]').value = ''
 			})
+      })
+		},
+		x: function(){
+			
 		}
 	}
 	controller.init(view)
