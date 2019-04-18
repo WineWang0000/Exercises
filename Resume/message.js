@@ -23,15 +23,19 @@
 				array.forEach((item)=>{
 					let li = document.createElement('li')
 					li.innerText = `${item.name} : ${item.content}`
-					let messageList = document.querySelector('#messageList')
-					messageList.appendChild(li)
+					this.messageList.appendChild(li)
 				})
 			})
 		},
 		bindEvents: function(){
-			let myForm = this.form
       this.form.addEventListener('submit', function(e){
-			e.preventDefault()
+			e.preventDefault()	
+			
+			})
+		this.x()
+		},
+		x: function(){
+			let myForm = this.form
 			let content = myForm.querySelector('input[name=content]').value
 			let name = myForm.querySelector('input[name=name]').value
 			var Message = AV.Object.extend('Message')
@@ -39,19 +43,15 @@
 			message.save({
 				name: name,
 				content: content          
-			}).then((object)=> {
-				console.log(object)
+			}).then(function(object){
 				let li = document.createElement('li')
 				li.innerText = `${object.attributes.name} : ${object.attributes.content}`
 				let messageList = document.querySelector('#messageList')
 				messageList.appendChild(li)
 				myForm.querySelector('input[name=content]').value = ''
 				myForm.querySelector('input[name=name]').value = ''
+				console.log(object)
 			})
-      })
-		},
-		x: function(){
-			
 		}
 	}
 	controller.init(view)
